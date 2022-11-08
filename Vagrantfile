@@ -2,7 +2,8 @@ Vagrant.configure("2") do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://vagrantcloud.com/search.
   config.vm.box = "generic/ubuntu2004"
-
+   config.vm.define  "Jenkins"
+   config.vm.hostname = "Jenkins"
    config.vm.network "private_network", ip: "192.168.201.100"
 
    config.vm.provider "virtualbox" do |vb|
